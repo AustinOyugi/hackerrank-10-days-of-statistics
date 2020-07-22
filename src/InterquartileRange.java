@@ -47,9 +47,6 @@ public class InterquartileRange {
 
         DecimalFormat decimalFormat = new DecimalFormat("#.0");
         System.out.println(decimalFormat.format(uppperQuartile - lowerQuartile));
-        System.out.println((int) lowerQuartile);
-        System.out.println((int) median);
-        System.out.println((int)uppperQuartile);
     }
 
     public static double getMedian(List<Integer> theArray) {
