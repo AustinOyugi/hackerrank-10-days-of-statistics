@@ -39,7 +39,7 @@ public class MeanMedianMode {
     int position = theArray.length / 2;
 
     DecimalFormat decimalformat = new DecimalFormat("#.#");
-    double median = 0;
+    double median;
     if (theArray.length % 2 == 0) {
       median = (theArray[position] + theArray[position - 1]) / 2;
     }
@@ -47,7 +47,7 @@ public class MeanMedianMode {
     return String.valueOf(decimalformat.format(median));
   }
 
-  @SuppressWarnings("OptionalGetWithoutIsPresent")
+
   public static String getMode(double[] numArray) {
     Map<Double, Integer> occurrence = new HashMap<>();
 
