@@ -36,10 +36,8 @@ public class InterquartileRange {
         List<Integer> upperQuartiles = new ArrayList<>();
 
         integerList.forEach(x->{
-            if (x<median)
-                lowerQuartiles.add(x);
-            else if (x>median)
-                upperQuartiles.add(x);
+            if (x<median) lowerQuartiles.add(x);
+            else if (x>median) upperQuartiles.add(x);
         });
 
         double lowerQuartile = getMedian(lowerQuartiles);
