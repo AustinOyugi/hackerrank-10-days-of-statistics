@@ -56,7 +56,7 @@ public class InterquartileRange {
         int position = theArray.size()/2;
         double median;
         if (theArray.size()%2 == 0)
-            median = (double) (theArray.get(position-1) + theArray.get(position))/2;
+            median =  Math.ceil((double) (theArray.get(position-1) + theArray.get(position))/2);
         else
             median = (double) theArray.get((int) (Math.ceil((double) theArray.size()/2))-1);
         return (median);
