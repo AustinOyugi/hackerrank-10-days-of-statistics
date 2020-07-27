@@ -41,7 +41,7 @@ public class MeanMedianMode {
     DecimalFormat decimalformat = new DecimalFormat("#.#");
     double median;
     if (theArray.length % 2 == 0) {
-      median = (theArray[position] + theArray[position - 1]) / 2;
+      return (String) decimalformat.format((theArray[position] + theArray[position - 1]) / 2);
     }
     median = (theArray[position - 1] + theArray[position]) / 2;
     return String.valueOf(decimalformat.format(median));
